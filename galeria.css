@@ -1,0 +1,12 @@
+.imagen-personalizada {
+    height: 350px;
+}
+
+.imagen-personalizada img {
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: transform 0.5s ease-in-out;
+}
+.imagen-personalizada img:hover {
+    transform: scale(1.2);
+ }

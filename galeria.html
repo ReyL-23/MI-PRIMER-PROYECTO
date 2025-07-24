@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Carusel + Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- El CSS personalizado -->
+    <link rel="stylesheet" href="galeria.css">
+
+
+</head>
+
+<body>
+
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GameVerse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="tops.html">Top Juegos</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Historia del videojuego -->
+  <section class="container my-5">
+  <h1 class="text-center mb-4">Galería</h1>
+
+    <div class="container my-4">
+        <div class="filtros d-flex flex-wrap gap-2">
+            <button class="boton-filtro btn btn-secondary" data-categoria="todos">Mostrar todo</button>
+
+            <button class="boton-filtro btn btn-primary" data-categoria="xbox">Xbox</button>
+            <button class="boton-filtro btn btn-primary" data-categoria="playstation">Playstation</button>
+            <button class="boton-filtro btn btn-primary" data-categoria="switch">Nintendo Switch</button>
+            <button class="boton-filtro btn btn-primary" data-categoria="pc">PC</button>
+
+            <button class="boton-filtro btn btn-warning" data-categoria="accion">Accion</button>
+            <button class="boton-filtro btn btn-warning" data-categoria="rts">Estrategia</button>
+            <button class="boton-filtro btn btn-warning" data-categoria="deportes">Deportes</button>
+            <button class="boton-filtro btn btn-warning" data-categoria="rpg">RPG</button>
+            <button class="boton-filtro btn btn-warning" data-categoria="aventura">Aventura</button>
+
+            <button class="boton-filtro btn btn-danger" data-categoria="pegi_3">PEGI 3+</button>
+            <button class="boton-filtro btn btn-danger" data-categoria="pegi_6">PEGI 6+</button>
+            <button class="boton-filtro btn btn-danger" data-categoria="pegi_12">Pegi 12+</button>
+            <button class="boton-filtro btn btn-danger" data-categoria="pegi_16">Pegi 16+</button>
+            <button class="boton-filtro btn btn-danger" data-categoria="pegi_18">Pegi 18+</button>
+        </div>
+    </div>
+
+
+    <div id="galeria" class="container">
+        <div class="d-flex flex-wrap gap-4 justify-center">
+            <div class="imagen-personalizada playstation accion pegi_18">
+                <img class="object-fit-cover h-100 w-100" src="img/bloodborne.jpg"
+                    alt="Bloodborne">
+            </div>
+            <div class="imagen-personalizada switch aventura pegi_3">
+                <img class="object-fit-cover h-100 w-100 " src="img/mario.jpg"
+                    alt="Super mario odissey">
+            </div>
+            <div class="imagen-personalizada pc accion pegi_12">
+                <img class="object-fit-cover h-100 w-100"
+                    src="img/hl2.jpg"
+                    alt="Half life 2">
+            </div>
+            <div class="imagen-personalizada pc xbox accion pegi_16">
+                <img class="object-fit-cover h-100 w-100"
+                    src="img/doom.jpg"
+                    alt="Doom">
+                    <!-- <span>Doom</span> -->
+            </div>
+            <div class="imagen-personalizada xbox accion aventura pegi_12">
+                <img class="object-fit-cover h-100 w-100"
+                    src="img/fable2.jpg"
+                    alt="fable 2">
+            </div>
+            <div class="imagen-personalizada xbox pc deportes pegi_12">
+                <img class="object-fit-cover h-100 w-100"
+                    src="img/forza5.jpg"
+                    alt="forza 5">
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <script src="galeria.js"></script>
+</body>
+
+</html>
